@@ -33,7 +33,9 @@ jobs:
         run: bun install
 
       - name: Build project
-        run: bunx vite build
+        run: bunx vite build --emptyOutDir
+        env:
+          NODE_ENV: production
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
