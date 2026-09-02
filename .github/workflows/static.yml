@@ -24,16 +24,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          bun-version: latest
+          node-version: 20
 
       - name: Install dependencies
-        run: bun install
+        run: npm install --force
 
       - name: Build project
-        run: bun run build --emptyOutDir
+        run: npx vite build --emptyOutDir
+        env:
+          NODE_ENV: production
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
