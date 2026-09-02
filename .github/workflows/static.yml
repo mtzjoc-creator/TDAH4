@@ -33,7 +33,7 @@ jobs:
         run: bun install
 
       - name: Build project
-        run: bunx vite build --emptyOutDir
+        run: npx vite build --emptyOutDir
         env:
           NODE_ENV: production
 
