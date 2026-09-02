@@ -1,0 +1,6 @@
+{
+  "name": "Evaluador Clínico TDAH Conners-4",
+  "description": "Sistema psicométrico y cualitativo de evaluación TDAH basado en el manual Conners 4ta Edición (Folleto Docentes 106 ítems y Folleto Padres 114 ítems) con interpretación clínica automatizada y adaptaciones escolares y del hogar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
